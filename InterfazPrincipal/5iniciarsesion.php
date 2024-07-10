@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar">
         <ul class="nav-links">
-            <li class="logo"><a class="entrar" href="index.html"><i class="fa-solid fa-house"></i><b> Inter-Medical</b></a></li>
+            <li class="logo"><a class="entrar" href="../index.html"><i class="fa-solid fa-house"></i><b> Inter-Medical</b></a></li>
         </ul>
     </nav>
     <main>
