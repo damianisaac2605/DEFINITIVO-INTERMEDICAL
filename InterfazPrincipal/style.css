@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+
+body,html{
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Imagenes/Fondo.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+header2{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Imagenes/Fondo2.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+header3{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Imagenes/Fondo5.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+header4{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Imagenes/Fondo6.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color:#000000;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 5vmin;
+}
+
+.line{
+    width: 300px;
+    height: 4px;
+    background: #28537e;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: #28537e;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #000000;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .row{
+    margin-top: 50px; 
+}
+
+h4{
+    font-size: 3vmin;
+    color: #28537e;
+    margin-top: 20px auto;
+    font-size: 150%;
+}
+
+.texto h4{
+    text-align: center;
+}
+
+.texto p{
+    text-align: center;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    padding: 0px 40px;
+    font-size: 130%;
+}
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../Imagenes/Consultorio por Fuera.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: #000000;
+}
+
+.explore-content h1{
+    font-size: 7vmin;
+    text-align: center;
+    font-size: 150%;
+}
+
+.explore-content .line{
+    margin-bottom: 50px;
+}
+
+.explore-content p1{
+    color: rgb(0, 0, 0);
+    font-size: 130%;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #28537e;
+    text-align: center;
+}
+
+.footer p{
+    color: white;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left:30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #88a7c6;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+        
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20x auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    .explore-content{
+        width: 100%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+
+img{
+    transition: transform .3s ease;
+    border: 6px #28537e solid;
+    border-radius: 10px;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+.ctn:hover{
+    background: #ffffff;
+    border: white;
+    color: #28537e;
+    box-shadow: 2px 2px 5px black;
+}
+
+a:hover{
+    color: #2b8ef1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5vw;
+    color: white; /* Cambia el color del texto a blanco */
+    background: #28537e;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #6ba1c5;
+    color: #f5f5f5;
+}
+
+.btn-container {
+    margin-bottom: 20px; /* Espacio superior */
+    margin-left: 80px;
+    text-align: left; /* Centra el contenido horizontalmente */
+}
